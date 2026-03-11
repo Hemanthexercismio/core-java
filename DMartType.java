@@ -1,0 +1,4 @@
+enum DMartType
+{
+	GROCERY,ELECTRONICS,CLOTHES,FOOD;
+}
