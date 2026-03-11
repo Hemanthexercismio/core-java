@@ -1,4 +1,0 @@
-enum ParliamentType
-{
-	BICAMERAL,UNICAMERAL,LOKHASABA,RAJYASABHA;
-}
