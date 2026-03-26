@@ -1,0 +1,15 @@
+enum ProductType
+{
+	ELECTRONICS,
+	GROCERY,
+	CLOTHING,
+	FURNITURE
+}
+
+enum WarrantyYears
+{
+	ONEYEAR,
+	TWOYEARS,
+	THREEYEARS,
+	FIVEYEARS
+}
