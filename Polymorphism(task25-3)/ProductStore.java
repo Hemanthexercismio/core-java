@@ -64,7 +64,7 @@ void store(Product[]product)
 	   if(this.products!=null )
 	   {
 		   System.out.println("array is not nullll");
-		   if(id >10&& id<=10000)
+		   
         for(Product produ:this.products)
 		{
 			System.out.println("Comparing with ID : "+produ.uniqueId);
@@ -78,10 +78,7 @@ void store(Product[]product)
 				}
 			}	
 		}	
-			else
-			{
-			System.out.println("id not matching");
-			}
+			
 	   }
 		else{
 			System.out.println("array is nullll");
@@ -99,7 +96,7 @@ boolean search(String searchByName,int id)
 	   if(this.products!=null  && searchByName!=null)
 	   {
 		   System.out.println("array is not nullll");
-		   if(id >10&& id<=10000)
+		  
         for(Product produ:this.products)
 		{
 			System.out.println("Comparing with ID : "+produ.uniqueId);
@@ -115,10 +112,8 @@ boolean search(String searchByName,int id)
 				}
 			}	
 		}	
-			else
-			{
-			System.out.println("id not matching");
-			}
+			
+			
 	   }
 		else{
 			System.out.println("array is nullll");
@@ -129,6 +124,40 @@ boolean search(String searchByName,int id)
 	}	
 	
 	
+	boolean search(String searchByName,int id,String country)
+	{
+		System.out.println("searching products using unique id , name , country ");
+	   boolean found=false;
+	   
+	   if(this.products!=null  && searchByName!=null && country!=null)
+	   {
+		   System.out.println("array is not nullll");
+		   
+        for(Product produ:this.products)
+		{
+			System.out.println("Comparing with ID : "+produ.uniqueId);
+			System.out.println("Comparing with name: "+produ.name);
+			System.out.println("Comparing with name: "+produ.originCountry);
+			
+	       if(products!=null)
+			{
+				if(produ.name == searchByName && produ.uniqueId==id && produ.originCountry==country )
+				{
+					found = true;
+					System.out.println("product is found");
+					break;
+				}
+			}	
+		}	
+			
+	   }
+		else{
+			System.out.println("array is nullll");
+			
+			
+		}
+		return found;
+	}	
 	
 	void displayinfo()
 	{
@@ -169,13 +198,15 @@ boolean search(String searchByName,int id)
 					}
 				}
 			}
-			else{
-			System.out.println("array is null");
+			
 		}
 		
 			}
-	}
 	
+	else{
+			System.out.println("array is null");
+	
+	}
 	}
 	
 	
@@ -199,13 +230,13 @@ boolean search(String searchByName,int id)
 					}
 				}
 			}
-			else{
-			System.out.println("array is null");
 		}
 		
-			}
+			
 	}
-	
+	else{
+			System.out.println("array is null");
+	}
 	}
 	
 	
@@ -229,15 +260,15 @@ boolean search(String searchByName,int id)
 					}
 				}
 			}
-			else{
-			System.out.println("array is null");
+			
 		}
 		
-			}
+			
 	}
-	
+	else{
+			System.out.println("array is null");
 	}
-	
+	}
 	
 	
 	

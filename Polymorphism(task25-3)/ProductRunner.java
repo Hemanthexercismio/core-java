@@ -176,6 +176,10 @@ class ProductRunner
 				 productstore.getAllByType(ProductType.CLOTHING);
 				 
 				 
+				 boolean reference2 = productstore.search("everest masala",129,"INDIA");
+				 System.out.println("The item is found:"+reference2);
+				 
+				 
 
 				 
 				 
