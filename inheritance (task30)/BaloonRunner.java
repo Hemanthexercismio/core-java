@@ -22,6 +22,9 @@ class BaloonRunner{
 		System.out.println("Printing Clcok Information using Inheritance");
 		
 
+		infoBaloon.color="red";
+		System.out.println("color"+infoBaloon.color);
+
 		
 		infoBaloon.shape="round";
 		System.out.println("shape:"+ infoBaloon.shape);

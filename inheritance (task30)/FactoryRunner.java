@@ -34,6 +34,9 @@ class FactoryRunner
 		infoFactory.shiftType = "Day Shift";
 		System.out.println("Shift Type: " + infoFactory.shiftType);
 		
+		infoFactory.factoryName = "hemanth";
+		System.out.println("--------factoryName:"+infoFactory.factoryName)
+		
 		System.out.println("-----------------------------------");
 		
 		infoFactory.produceGoods();    
