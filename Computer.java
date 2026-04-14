@@ -1,4 +1,4 @@
-class Computer{
+55class Computer{
 
     void install(Browser browser){
         System.out.println("Executing install metod in Computer class");
