@@ -17,8 +17,8 @@ public class Country {
     @Override
     public String toString() {
         return "Country{" +
-                "name='" + name + '\'' +
-                ", president=" + president +
+                "name='" + name + '\n' +
+                ", president=" + president +'\n'+
                 ", states=" + Arrays.toString(states) +
                 '}';
     }
